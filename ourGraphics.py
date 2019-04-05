@@ -35,6 +35,7 @@ draw_rect(300, 700, 75, 100, "red", grwin)
 draw_rect(300, 590, 75, 100, "blue", grwin)
 draw_rect(385, 700, 75, 100, "green", grwin)
 draw_rect(385, 590, 75, 100, "yellow", grwin)
+<<<<<<< .merge_file_OtDEw6
 
 logo = Text(Point(450, 485), "banana")
 logo.setText("BANANA")
@@ -43,4 +44,6 @@ logo.setSize(30)
 logo.setFace("arial")
 logo.draw(grwin)
 
+=======
+>>>>>>> .merge_file_bsh3yM
 
