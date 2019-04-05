@@ -46,15 +46,23 @@ logo.draw(grwin)
 chCol = 230
 
 kX = 250
-kY = 430
+kY = 470
 
 col = "white"
 
 
-
-
-for i in range (11):
+for j in range (5):
+    kY -= 40
+    kX = 250
+    
+    for i in range (11):
         kX += 30
         draw_trap(kX,kY, 30, 37.5, 5, col, grwin)
         print(kX)
         print(kY)
+        if (i + j) % 2 == 0:
+            col = "dark grey"
+        else:
+            col = "white"
+
+
