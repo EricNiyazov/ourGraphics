@@ -15,6 +15,12 @@ draw_rect(230, 500, 440, 433, "dark blue", grwin)
 
 draw_rect(250, 500, 400, 403, "black", grwin)
 
+
 trap = Polygon(Point(180, 105), Point(180+50, 105+395), Point(180+540 - 50, 105+395), Point(180 + 540, 105))
 trap.setFill("black")
 trap.draw(grwin)
+
+trap = Polygon(Point(200, 125), Point(200+50, 125+375), Point(200+500 - 50, 125+375), Point(200 + 500, 125))
+trap.setFill("grey")
+trap.draw(grwin)
+
