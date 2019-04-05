@@ -11,6 +11,11 @@ def draw_trap(X1,Y1, sizeX, sizeY, scale, color,win):
     trap.setFill(color)
     trap.draw(win)
 
+def draw_key(X1,Y1, sizeX, sizeY, scale, letter, color,win):
+    key = draw_trap(X1,Y1, sizeX, sizeY, scale, color,win)
+    key = Text(Point(X1 + sizeX / 2, Y1 + sizeY / 2), letter)
+    key.draw(win)
+
 grwin = GraphWin("ourGraphics.py", 1500, 1000)
 grwin.setCoords(0, 0, 1000, 1000)
 
@@ -31,3 +36,25 @@ draw_rect(300, 590, 75, 100, "blue", grwin)
 draw_rect(385, 700, 75, 100, "green", grwin)
 draw_rect(385, 590, 75, 100, "yellow", grwin)
 
+logo = Text(Point(450, 485), "banana")
+logo.setText("BANANA")
+logo.setTextColor("green")
+logo.setSize(30)
+logo.setFace("arial")
+logo.draw(grwin)
+
+chCol = 230
+
+kX = 250
+kY = 430
+
+col = "white"
+
+
+
+
+for i in range (11):
+        kX += 30
+        draw_trap(kX,kY, 30, 37.5, 5, col, grwin)
+        print(kX)
+        print(kY)
